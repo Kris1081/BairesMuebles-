@@ -1,0 +1,218 @@
+.contacto-main .banner {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/contacto-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--blanco);
+    padding: 0 2rem;
+}
+
+.contacto-main .banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contacto-main .banner p {
+    font-size: 1.2rem;
+}
+
+.contacto-container {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 5%;
+}
+
+.ubicacion, .formulario-contacto, .faq {
+    margin-bottom: 4rem;
+}
+
+.ubicacion h2, .formulario-contacto h2, .faq h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--gris-oscuro);
+    text-align: center;
+}
+
+.mapa {
+    height: 400px;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.mapa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-ubicacion {
+    background-color: var(--blanco);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.info-ubicacion p {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.info-ubicacion p strong {
+    color: var(--gris-oscuro);
+}
+
+.formulario-contacto form {
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--gris-oscuro);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--gris-claro);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--beige-oscuro);
+    color: var(--negro);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--gris);
+    color: var(--blanco);
+}
+
+.faq-item {
+    margin-bottom: 1rem;
+    background-color: var(--blanco);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 1.5rem;
+    text-align: left;
+    background-color: var(--beige);
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--gris-oscuro);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question::after {
+    content: '+';
+    font-size: 1.5rem;
+}
+
+.faq-question.active::after {
+    content: '-';
+}
+
+.faq-answer {
+    padding: 0 1.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-answer p {
+    padding: 1.5rem 0;
+}
+
+.faq-answer.show {
+    max-height: 500px;
+    padding: 0 1.5rem;
+}
+
+@media (min-width: 992px) {
+    .contacto-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+    
+    .ubicacion {
+        grid-column: 1 / -1;
+    }
+    
+    .faq {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .contacto-main .banner h2 {
+        font-size: 2rem;
+    }
+    
+    .mapa {
+        height: 300px;
+    }
+}
+
+.logo-circular {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: none; 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); 
+    margin-right: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.logo-circular:hover {
+    transform: scale(1.5);
+}
+
+.logo {
+    margin-left: 19rem; 
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}

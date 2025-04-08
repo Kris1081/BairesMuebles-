@@ -1,0 +1,126 @@
+.muebles-main .banner {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/muebles-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--blanco);
+    padding: 0 2rem;
+}
+
+.muebles-main .banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.muebles-main .banner p {
+    font-size: 1.2rem;
+}
+
+.filtros {
+    padding: 2rem 5%;
+    background-color: var(--beige);
+}
+
+.filtros-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn-filtro {
+    padding: 0.8rem 1.5rem;
+    background-color: var(--blanco);
+    border: 1px solid var(--gris-claro);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.btn-filtro:hover, .btn-filtro.active {
+    background-color: var(--beige-oscuro);
+    color: var(--negro);
+}
+
+.galeria-muebles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 4rem 5%;
+}
+
+.mueble-item {
+    background-color: var(--blanco);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.mueble-item:hover {
+    transform: translateY(-10px);
+}
+
+.mueble-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.mueble-info {
+    padding: 1.5rem;
+}
+
+.mueble-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--gris-oscuro);
+}
+
+.mueble-info p {
+    margin-bottom: 1rem;
+    color: var(--gris);
+    font-size: 0.9rem;
+}
+
+.precio {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--gris-oscuro);
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .muebles-main .banner h2 {
+        font-size: 2rem;
+    }
+    
+    .galeria-muebles {
+        grid-template-columns: 1fr;
+    }
+}
+.logo-circular {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: none; 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); 
+    margin-right: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.logo-circular:hover {
+    transform: scale(1.5);
+}
+
+.logo {
+    margin-left: 19rem; 
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baires Muebles - Contacto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="Img/logo.jpg" alt="Baires Muebles Logo" class="logo-circular">
+        </a>
+        <div class="logo">
+            <h1>Baires<span>Muebles</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="fabricacion.html">Fabricación</a></li>
+                <li><a href="tapiceria.html">Tapicería</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contacto-main">
+        <section class="banner">
+            <h2>Contáctanos</h2>
+            <p>Estamos aquí para ayudarte</p>
+        </section>
+
+        <div class="contacto-container">
+            <section class="ubicacion">
+                <h2>Ubícanos</h2>
+                <div class="mapa">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2267.1398490054735!2d-87.16823398420186!3d14.065855331859343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTTCsDAzJzU3LjIiTiA4N8KwMTAnMDcuMyJX!5e1!3m2!1ses-419!2shn!4v1744153974756!5m2!1ses-419!2shn"
+                    allowfullscreen="" 
+                    loading="lazy">
+                    </iframe>
+                </div>
+                <div class="info-ubicacion">
+                    <p><strong>Dirección:</strong> Residencial San Juan, Tegucialpa</p>
+                    <p><strong>Horario:</strong><br>Lunes a Viernes: 8am - 5pm<br>Sábado: 8am - 1pm</p>
+                    <p><strong>Teléfono:</strong> (504) 9870-6266</p>
+                </div>
+            </section>
+
+            <section class="formulario-contacto">
+                <h2>Envíanos un Mensaje</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar Mensaje</button>
+                </form>
+            </section>
+
+            <section class="faq">
+                <h2>Preguntas Frecuentes</h2>
+                <div class="faq-item">
+                    <button class="faq-question">¿Cuál es el tiempo de entrega de los muebles?</button>
+                    <div class="faq-answer">
+                        <p>El tiempo de entrega varía según el producto y la personalización. Para muebles estándar, el tiempo promedio es de 2-3 semanas. Los muebles personalizados pueden tardar entre 4-6 semanas.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">¿Ofrecen garantía en sus productos?</button>
+                    <div class="faq-answer">
+                        <p>Sí, todos nuestros muebles tienen una garantía de 2 años contra defectos de fabricación. Para tapicería, ofrecemos 1 año de garantía.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">¿Puedo personalizar los materiales de mi mueble?</button>
+                    <div class="faq-answer">
+                        <p>Absolutamente. Trabajamos con una amplia variedad de maderas, telas y acabados. Nuestros diseñadores pueden ayudarte a seleccionar los materiales perfectos para tu pieza.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">¿Realizan envíos a otras ciudades?</button>
+                    <div class="faq-answer">
+                        <p>Sí, realizamos envíos a nivel nacional. Los costos y tiempos varían según la ubicación. Contáctanos para un cotización exacta.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Baires Muebles. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/faq.js"></script>
+</body>
+</html>
